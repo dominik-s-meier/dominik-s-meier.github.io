@@ -13,7 +13,7 @@ profile:
 
 news: false # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+social: false # includes social icons at the bottom of the page
 ---
 
 I'm currently a postdoc at the [Center for Philanthropy Studies (CEPS)](https://ceps.unibas.ch/en/) and a visiting researcher at the [Gradel Institute of Charity (Oxford)](https://www.gradelinstituteofcharity.co.uk). 
