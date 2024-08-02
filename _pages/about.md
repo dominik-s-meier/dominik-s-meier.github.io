@@ -16,7 +16,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: false # includes social icons at the bottom of the page
 ---
 
-I'm currently a postdoc at the [Center for Philanthropy Studies (CEPS)](https://ceps.unibas.ch/en/) and a visiting researcher at the [Gradel Institute of Charity (Oxford)](https://www.gradelinstituteofcharity.co.uk). 
+I'm an Assistant Professor of Global Philanthropy at the [Center for Philanthropy Studies (CEPS)](https://ceps.unibas.ch/en/) and a visiting researcher at the [Gradel Institute of Charity (Oxford)](https://www.gradelinstituteofcharity.co.uk). 
 
 I use [big data](https://doi.org/10.1177/08997640231185119), [machine learning and natural language processign](https://www.econstor.eu/bitstream/10419/283363/1/1844747557.pdf) to study individual and institutional philanthropy. 
 
