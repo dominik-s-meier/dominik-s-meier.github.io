@@ -1,0 +1,315 @@
+% Modern Academic CV - Dominik S. Meier
+\documentclass[11pt,letterpaper]{article}
+
+% Packages
+\usepackage[utf8]{inputenc}
+\usepackage[margin=0.75in]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+
+% Fix for long URLs - must come before hyperref
+\PassOptionsToPackage{hyphens}{url}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{tabularx}
+\usepackage{array}
+
+% Define colors
+\definecolor{headercolor}{RGB}{0,51,102}
+\definecolor{accentcolor}{RGB}{0,102,204}
+
+% Hyperref setup
+\hypersetup{
+    colorlinks=true,
+    linkcolor=accentcolor,
+    urlcolor=accentcolor,
+    citecolor=accentcolor,
+    breaklinks=true
+}
+
+% Allow flexible breaking of URLs at many characters
+\expandafter\def\expandafter\UrlBreaks\expandafter{\UrlBreaks%
+\do\a\do\b\do\c\do\d\do\e\do\f\do\g\do\h\do\i\do\j%
+\do\k\do\l\do\m\do\n\do\o\do\p\do\q\do\r\do\s\do\t%
+\do\u\do\v\do\w\do\x\do\y\do\z\do\A\do\B\do\C\do\D%
+\do\E\do\F\do\G\do\H\do\I\do\J\do\K\do\L\do\M\do\N%
+\do\O\do\P\do\Q\do\R\do\S\do\T\do\U\do\V\do\W\do\X%
+\do\Y\do\Z\do\0\do\1\do\2\do\3\do\4\do\5\do\6\do\7%
+\do\8\do\9\do\/\do\-}
+\setlength{\emergencystretch}{3em}
+\Urlmuskip=0mu plus 1mu
+
+% Custom section formatting
+\titleformat{\section}
+    {\Large\bfseries\color{headercolor}}
+    {}
+    {0em}
+    {}
+    [\titlerule]
+
+\titleformat{\subsection}
+    {\large\bfseries\color{headercolor}}
+    {}
+    {0em}
+    {}
+
+% No page numbers on first page
+\pagenumbering{gobble}
+
+% Custom commands
+\newcommand{\cvitem}[2]{
+    \noindent
+    \begin{tabularx}{\textwidth}{@{}l X@{}}
+        \textbf{#1} & #2
+    \end{tabularx}
+}
+
+\newcommand{\pubitem}[1]{
+    \item #1
+}
+
+% Reduce spacing
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.5em}
+
+\begin{document}
+
+% Header
+\begin{center}
+    {\Huge\bfseries\color{headercolor} DOMINIK S. MEIER}
+    
+    \vspace{0.3em}
+    
+    {\large Assistant Professor for Global Philanthropy}
+    
+    \vspace{0.5em}
+    
+    \begin{tabular}{c c c}
+        \href{mailto:dominik.meier@unibas.ch}{dominik.meier@unibas.ch} &
+        \href{https://dominik-s-meier.github.io}{dominik-s-meier.github.io} &
+        \href{https://orcid.org/0000-0002-3999-1388}{ORCID: 0000-0002-3999-1388}
+    \end{tabular}
+\end{center}
+
+\vspace{1em}
+
+% Research Interests
+\section*{Research Interests}
+
+My research examines individual and institutional philanthropy with a focus on global contexts. At the individual level, I study prosocial behavior including charitable giving and volunteering across cultures and platforms. At the institutional level, I investigate how nonprofits, foundations, and corporate philanthropy programs operate internationally, with particular attention to how nonprofit and for-profit organizations differ and overlap in their missions and contributions to the Sustainable Development Goals (SDGs). I employ big data analytics, machine learning, and natural language processing to analyze philanthropic patterns at scale, including developing algorithms to detect SDG-related content in text.
+
+% Academic Employment
+\section*{Academic Employment}
+
+\textbf{University of Basel}, Faculty of Business and Economics, Basel, Switzerland
+
+\begin{tabular}{@{}p{0.78\textwidth}r@{}}
+Assistant Professor for Global Philanthropy (Non-Tenure Track) & Aug 2024 -- Present \\
+Postdoc, Center for Philanthropy Studies & Sep 2023 -- Jul 2024 \\
+\end{tabular}
+
+\vspace{0.5em}
+
+\textbf{University of Basel}, Basel, Switzerland
+
+\begin{tabular}{@{}p{0.78\textwidth}r@{}}
+PhD Student, Center for Philanthropy Studies \& Center for Economic Psychology & Aug 2019 -- Aug 2023 \\
+Graduate Research Assistant, Center for Philanthropy Studies & Sep 2017 -- Aug 2019 \\
+Graduate Research Assistant, Center for Economic Psychology & Sep 2018 -- Jun 2019 \\
+Teaching Assistant (R \& Statistics) & Aug 2015 -- Dec 2018 \\
+\end{tabular}
+
+% Education
+\section*{Education}
+
+\textbf{PhD, \textit{summa cum laude}}, University of Basel \hfill 2019 -- 2023 \\
+Faculty of Psychology \\
+Dissertation: \textit{Social Preferences Across Contexts} \\
+Advisors: Prof. Dr. Jörg Rieskamp \& Prof. Dr. Georg von Schnurbein
+
+\textbf{MSc, Economic Psychology}, University of Basel \hfill 2017 -- 2019 \\
+Grade: 5.9/6.0 \\
+Advisor: Prof. Dr. Jörg Rieskamp
+
+\textbf{BSc, Economics}, University of Basel \hfill 2018 -- 2019 \\
+Grade: 5.2/6.0
+
+\textbf{BSc, Psychology}, University of Basel \hfill 2014 -- 2017 \\
+Grade: 5.6/6.0
+
+% Awards & Fellowships
+\section*{Awards \& Fellowships}
+
+\textbf{Lester M. Salamon Emerging Scholar Dissertation Award} \hfill 2026 \\
+International Society for Third Sector Research (ISTR), for \textit{Social Preferences Across Contexts}
+
+\textbf{Daniel Cheng Prize for Early Career Achievement} \hfill 2025 \\
+Gradel Institute of Charity, University of Oxford
+
+\textbf{ARNOVA DAS Award} for the text2sdg R package \hfill 2024
+
+\textbf{Visiting Researcher}, Gradel Institute of Charity, New College, University of Oxford \hfill Sep 2024 -- Ongoing \\
+Fellows Program
+
+\textbf{Penn Summer Social Impact Doctoral Fellows Program} \hfill Jun 2022 \\
+University of Pennsylvania
+
+% Publications
+\section*{Publications}
+
+\subsection*{Peer-Reviewed Journal Articles}
+
+\begin{enumerate}[leftmargin=*, itemsep=0.5em]
+
+\pubitem{\textbf{Meier, D. S.}, \& Searing, E. A. M. (2026). Toward an SDG-Based Typology for US Nonprofits. \textit{Business Strategy and the Environment}, 35(4), 5344-5363. \href{https://doi.org/10.1002/bse.70419}{https://doi.org/10.1002/bse.70419}}
+
+\pubitem{\textbf{Meier, D. S.} (2025). Compassion for all: Real-world online donations contradict compassion fade. \textit{Nonprofit and Voluntary Sector Quarterly}, 54(2), 267-301. \href{https://doi.org/10.1177/08997640241255707}{https://doi.org/10.1177/08997640241255707}}
+
+\pubitem{\textbf{Meier, D. S.}, Mata, R., \& Wulff, D. U. (2025). text2sdg: An R Package to Monitor Sustainable Development Goals from Text. \textit{The R Journal}, 16(1), 83-96. \href{https://doi.org/10.32614/RJ-2024-005}{https://doi.org/10.32614/RJ-2024-005}}
+
+\pubitem{\textbf{Meier, D. S.}, \& von Schnurbein, G. (2025). From Mission to Market: Assessing Sector Overlap Between Nonprofits and For-Profits. \textit{Nonprofit and Voluntary Sector Quarterly}, 54(5), 1017-1042. \href{https://doi.org/10.1177/08997640241300509}{https://doi.org/10.1177/08997640241300509}}
+
+\pubitem{\textbf{Meier, D. S.}, Petrig, A., \& von Schnurbein, G. (2024). Risking Your Health to Help Others: The Effect of Pandemic Severity on Volunteering. \textit{Nonprofit and Voluntary Sector Quarterly}, 53(3), 741-769. \href{https://doi.org/10.1177/08997640231185119}{https://doi.org/10.1177/08997640231185119}}
+
+\pubitem{Wulff, D. U., \textbf{Meier, D. S.}, \& Mata, R. (2024). Using novel data and ensemble models to improve automated labeling of Sustainable Development Goals. \textit{Sustainability Science}, 19(5), 1773-1787. \href{https://doi.org/10.1007/s11625-024-01516-3}{https://doi.org/10.1007/s11625-024-01516-3}}
+
+\pubitem{\textbf{Meier, D. S.} (2023). The evolution of SDG-related third sector and public administration literature: an analysis and call for more SDG-related research. \textit{Sustainability: Science, Practice and Policy}, 19(1), 2236501. \href{https://doi.org/10.1080/15487733.2023.2236501}{https://doi.org/10.1080/15487733.2023.2236501}}
+
+\pubitem{Albrecht, R., Jarecki, J. B., \textbf{Meier, D. S.}, \& Rieskamp, J. (2021). Risk preferences and risk perception affect the acceptance of digital contact tracing. \textit{Humanities and Social Sciences Communications}, 8(1), 195. \href{https://doi.org/10.1057/s41599-021-00856-0}{https://doi.org/10.1057/s41599-021-00856-0}}
+
+\end{enumerate}
+
+\subsection*{Manuscripts Under Revision}
+
+\begin{enumerate}[leftmargin=*, itemsep=0.5em, resume]
+
+\pubitem{\textbf{Meier, D. S.} (2025). The Changing Face of Philanthropy: How Corporate Philanthropy Surpassed Nonprofit Legitimacy in Media Narratives (1840-2024). Revise and resubmit at \textit{Nonprofit and Voluntary Sector Quarterly}.}
+
+\end{enumerate}
+
+\subsection*{Working Papers}
+
+\begin{enumerate}[leftmargin=*, itemsep=0.5em, resume]
+
+\pubitem{\textbf{Meier, D. S.} (2025). The Intellectual Geography of Nonprofit Research: An LLM-Driven Analysis of Theories, Contexts, and Methodologies. ERNOP 2025 presentation.}
+
+\pubitem{Van Overbeeke, P., \& \textbf{Meier, D. S.} (2025). Volunteers vs paid staff: Exploring the global dynamics of role substitution in philanthropic organizations. ERNOP 2025 presentation.}
+
+\pubitem{McDonnel, D., \& \textbf{Meier, D. S.} (2025). When Charities Leave: Country-Level Patterns of UK Overseas Charity Presence, Withdrawal, and Adaptation. ERNOP 2025 presentation.}
+
+\pubitem{Walk, M., Horvath, K., \textbf{Meier, D. S.}, \& Oster, M. (2025). "United by Music, United by You": ESC Volunteer Perceptions of HR-Practices – a Mixed-Methods Study. ERNOP 2025 presentation.}
+
+\pubitem{Doodeman, E., de Wit, A., \textbf{Meier, D. S.}, \& Mohan, J. (2025). How important is volunteering in people's lives? Capturing caring intentions with Large Language Models.}
+
+\pubitem{\textbf{Meier, D. S.} (2025). LLM-rated deservingness predicts donation-based crowdfunding success.}
+
+\end{enumerate}
+
+\subsection*{Software}
+
+\begin{enumerate}[leftmargin=*, itemsep=0.5em, resume]
+
+\pubitem{Wulff, D. U., \& \textbf{Meier, D. S.} (2021). text2sdg: Detecting UN Sustainable Development Goals in Text (Version 0.1.0). \textit{Zenodo}. \href{https://doi.org/10.5281/zenodo.5553980}{https://doi.org/10.5281/zenodo.5553980}}
+
+\end{enumerate}
+
+\subsection*{Book Chapters \& Encyclopedia Entries}
+
+\begin{enumerate}[leftmargin=*, itemsep=0.5em, resume]
+
+\pubitem{Seffusatti, A., \& \textbf{Meier, D. S.} (2025). PPP–DSE Nexus: Hybrid Governance for the SDGs. In V. Scuotto, N. Krueger, \& M. Del Giudice (Eds.), \textit{Digital Social Entrepreneurship: Implications for People, Planet, and Profit} (pp. 77-94). Routledge. \href{https://doi.org/10.4324/9781003583448-5}{https://doi.org/10.4324/9781003583448-5}}
+
+\pubitem{\textbf{Meier, D. S.} (2025). Compassion. In R. A. List, H. K. Anheier, \& S. Toepler (Eds.), \textit{International Encyclopedia of Civil Society} (pp. 1-6). Springer. \href{https://doi.org/10.1007/978-3-319-99675-2_9682-1}{https://doi.org/10.1007/978-3-319-99675-2\_9682-1}}
+
+\end{enumerate}
+
+\subsection*{Reports \& Non-Refereed Publications}
+
+\begin{enumerate}[leftmargin=*, itemsep=0.5em, resume]
+
+\pubitem{Neubert, L., von Schnurbein, G., Lussi, M., \& \textbf{Meier, D. S.} (2022). \textit{Jahrbuch der Hilfswerke. Die Finanzen der Schweizer Nonprofit-Organisationen}.}
+
+\pubitem{Potluka, O., \textbf{Meier, D. S.}, Wolf, R., Giardina, F., \& Ramacci, R. (2022). \textit{Mapping Digitale Zivilgesellschaft in der Schweiz}. CEPS Forschung \& Praxis – Band 29.}
+
+\pubitem{Neubert, L., von Schnurbein, G., Lussi, M., \& \textbf{Meier, D. S.} (2021). \textit{Jahrbuch der Hilfswerke. Die Finanzen der Schweizer Nonprofit-Organisationen}.}
+
+\pubitem{\textbf{Meier, D. S.}, Nietlispach, L., \& Kirnbauer, Y. (2020). \textit{Konjunkturbarometer 2020. Eine Trendanalyse des Schweizer NPO-Sektors}. CEPS Forschung \& Praxis – Band 25.}
+
+\pubitem{Neubert, L., von Schnurbein, G., Schweiwiller, M., \& \textbf{Meier, D. S.} (2020). \textit{Jahrbuch der Hilfswerke. Die Finanzen der Schweizer Nonprofit-Organisationen}.}
+
+\end{enumerate}
+
+% Conference Presentations
+\section*{Selected Conference Presentations}
+
+\textbf{Meier, D. S.} (2024). The Changing Face of Philanthropy: How Corporate Philanthropy Surpassed Nonprofit Legitimacy in Media Narratives (1840-2024). Paper presented at the 53rd Annual ARNOVA Conference, Washington D.C., USA.
+
+\textbf{Meier, D. S.}, \& Searing, E. A. M. (2024). Towards an SDG-Based Typology for U.S. Nonprofits. Paper presented at the 53rd Annual ARNOVA Conference, Washington D.C., USA.
+
+\textbf{Meier, D. S.} (2024). The Changing Face of Philanthropy: How Corporate Philanthropy Surpassed Nonprofit Legitimacy in Media Narratives (1840-2024). Paper presented at the 16th ISTR International Conference, Antwerpen, Belgium.
+
+\textbf{Meier, D. S.}, \& Litofcenko, J. (2023). Blurry boundaries: Implications of convergence between for-profits and non-profits on their survival probabilities. Paper presented at the 52nd Annual ARNOVA Conference, Orlando, USA.
+
+von Schnurbein, G., \textbf{Meier, D. S.}, Hengevoss, A., \& Valta, P. (2023). Are they worth the money? Consequences of individual satisfaction and organizational performance of board compensation. Paper presented at the 52nd Annual ARNOVA Conference, Orlando, USA.
+
+\textbf{Meier, D. S.} (2023). Compassion for all: Real-world online donations contradict compassion fade theory. Paper presented at the 11th ERNOP Conference, Zagreb, Croatia.
+
+\textbf{Meier, D. S.}, \& von Schnurbein, G. (2022). What Motivates People to Volunteer During a Pandemic? Paper presented at the 15th ISTR International Conference, Montreal, Canada.
+
+\textbf{Meier, D. S.}, \& von Schnurbein, G. (2019). Let people choose – the effect of sorting on the external validity of social preference games in philanthropy. Paper presented at the ERNOP Conference, Basel, Switzerland.
+
+% Teaching
+\section*{Teaching Experience}
+
+\subsection*{University of Basel}
+
+\textbf{Executive Education}
+\begin{itemize}[leftmargin=*, itemsep=0.2em]
+    \item Nonprofit Leadership (CAS Nonprofit Governance \& Leadership) -- Half-day module
+\end{itemize}
+
+\textbf{Graduate Courses (Master's Level)}
+\begin{itemize}[leftmargin=*, itemsep=0.2em]
+    \item Social Preferences and Fundraising: A Behavioral Economics Perspective
+    \item Text Analysis in R: From Basic Techniques to Modern AI
+\end{itemize}
+
+\textbf{Undergraduate Courses (Bachelor's Level)}
+\begin{itemize}[leftmargin=*, itemsep=0.2em]
+    \item Sustainability Management: Foundations of Responsible Management
+    \item Introduction to Modern Data Analysis with R and AI
+\end{itemize}
+
+\textbf{Student Supervision}
+\begin{itemize}[leftmargin=*, itemsep=0.2em]
+    \item Doctoral Students: Alice Seffusatti, "NPOs and SDGs" (2024 -- ongoing)
+    \item Bachelor and Master Theses: 5+ years of supervision experience
+\end{itemize}
+
+% Service
+\section*{Service to Profession}
+
+\subsection*{Editorial Service}
+
+Editorial Board, \textit{Voluntas} \hfill 2026 -- Present
+
+Editorial Board, \textit{Nonprofit and Voluntary Sector Quarterly} \hfill 2025 -- Present
+
+\subsection*{Conference Organization}
+
+Co-Organizer, First Workshop on Global Philanthropy \hfill 2025
+
+\subsection*{Professional Memberships}
+
+Association for Research on Nonprofit Organizations and Voluntary Action (ARNOVA)
+
+International Society for Third Sector Research (ISTR)
+
+European Research Network on Philanthropy (ERNOP)
+
+\vfill
+\begin{center}
+    \textit{Last updated: \today}
+\end{center}
+
+\end{document}

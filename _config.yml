@@ -215,6 +215,7 @@ kramdown:
 # Includes & excludes
 include: ["_pages"]
 exclude:
+  - assets/pdf/DM_cv.tex
   - bin/
   - CONTRIBUTING.md
   - CUSTOMIZE.md
